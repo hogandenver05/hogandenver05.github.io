@@ -1,0 +1,49 @@
+baseURL = 'https://hogandenver05.github.io/'
+languageCode = 'en-us'
+title = 'Denver Hogan'
+theme = 'portfolio-theme'
+publishDir = 'public'
+
+[params]
+  author = 'Denver Hogan'
+  description = 'Software developer with co-op experience building scalable apps and delivering exceptional results.'
+  email = 'hogand6@nku.edu'
+  phone = '(859) 444-8279'
+  
+  # Social links
+  github = 'hogandenver05'
+  linkedin = 'hogandenver05'
+  
+  # Color palette
+  accentColor = '#0066FF' # Electric blue
+  
+  # SEO
+  defaultImage = '/images/og-image.jpg'
+  
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/projects/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+

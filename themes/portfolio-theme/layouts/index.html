@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">{{ .Content | markdownify }}</h1>
+    
+    <div class="terminal-container">
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="terminal-control terminal-close"></span>
+            <span class="terminal-control terminal-minimize"></span>
+            <span class="terminal-control terminal-maximize"></span>
+          </div>
+          <div class="terminal-title">terminal</div>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <!-- Terminal content will be added here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
