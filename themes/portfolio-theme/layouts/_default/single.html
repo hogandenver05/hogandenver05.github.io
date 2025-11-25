@@ -7,6 +7,16 @@
     {{ end }}
   </header>
   
+  {{ if eq .File.BaseFileName "about" }}
+  <div class="portrait-frame-container-about">
+    <div class="portrait-frame">
+      <div class="portrait-frame-inner">
+        <img src="/images/portrait.png" alt="Denver Hogan" class="portrait-image">
+      </div>
+    </div>
+  </div>
+  {{ end }}
+  
   <div class="page-content">
     {{ .Content }}
   </div>
