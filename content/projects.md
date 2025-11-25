@@ -19,6 +19,7 @@ subtitle: "Building solutions, one project at a time"
       <span class="project-tag">MVVM</span>
       <span class="project-tag">Hilt</span>
       <span class="project-tag">Git</span>
+      <span class="project-tag">Compose</span>
       <span class="project-tag">Retrofit</span>
     </div>
     <p>A mobile app that displays live amusement park wait times using clean MVVM architecture.</p>
@@ -39,7 +40,6 @@ subtitle: "Building solutions, one project at a time"
       <span class="project-tag">REST API</span>
       <span class="project-tag">Backend</span>
       <span class="project-tag">Docker</span>
-      <span class="project-tag">Git</span>
       <span class="project-tag">Laravel Sanctum</span>
     </div>
     <p>A RESTful API for meal tracking built with Laravel and MySQL, featuring user authentication, food tracking, and favorites management.</p>
@@ -60,6 +60,7 @@ subtitle: "Building solutions, one project at a time"
       <span class="project-tag">Game Development</span>
       <span class="project-tag">Scrum</span>
       <span class="project-tag">Git</span>
+      <span class="project-tag">SDLC</span>
       <span class="project-tag">Team Project</span>
       <span class="project-tag">Pytest</span>
     </div>
@@ -79,6 +80,7 @@ subtitle: "Building solutions, one project at a time"
       <span class="project-tag">Node.js</span>
       <span class="project-tag">MongoDB</span>
       <span class="project-tag">JWT</span>
+      <span class="project-tag">Web Development</span>
       <span class="project-tag">Git</span>
       <span class="project-tag">Full-Stack</span>
     </div>
@@ -97,11 +99,11 @@ subtitle: "Building solutions, one project at a time"
     <div class="project-tags">
       <span class="project-tag">JavaScript</span>
       <span class="project-tag">Web Design</span>
-      <span class="project-tag">Full-Stack</span>
+      <span class="project-tag">Frontend</span>
       <span class="project-tag">Git</span>
       <span class="project-tag">Team Project</span>
     </div>
-    <p>An overhaul of the website <a href="https://www.sustainiac.com" target="_blank" rel="noopener">www.sustainiac.com</a>. For my final project in INF 286, I teamed up with two peers to redesign an existing website from the ground up.</p>
+    <p>An overhaul of the website <a href="https://www.sustainiac.com" target="_blank" rel="noopener">www.sustainiac.com</a>. For my final project in my first Web Development course, I teamed up with two peers to redesign an existing website from the ground up.</p>
     <p>We chose Sustainiac's website because it appeared outdated and illogically structured, from the site navigation to the actual code. We wanted to breathe new life into the website and offer a less confusing experience for the user. We did our research and built a top layer front-end site highlighting the company's purpose and displaying some of their products. I plan to continue improving this project as I learn new skills.</p>
     <div class="project-links">
       <a href="https://www.sustainiac.com" target="_blank" rel="noopener">Visit Sustainiac →</a>
@@ -119,8 +121,9 @@ subtitle: "Building solutions, one project at a time"
       <span class="project-tag">Frontend</span>
       <span class="project-tag">Web Design</span>
       <span class="project-tag">Git</span>
+      <span class="project-tag">MVP</span>
     </div>
-    <p>An online shop for handmade accessories (bracelets, necklaces, etc.) built as my final project for INF 284 at Northern Kentucky University.</p>
+    <p>An online shop for handmade accessories (bracelets, necklaces, etc.) built as my final individual project for my first Web Development course.</p>
     <p>I expanded a project I had started years ago, humbly named after my sister, Darcy. The purpose of the site was to serve as an online shop for handmade accessories that she would make and sell to her friends at school. The project remained largely uncompleted until I revived it for this assignment. I plan to gradually improve the site over the coming months.</p>
     <div class="project-links">
       <a href="https://github.com/hogandenver05/darcy_shack" target="_blank" rel="noopener">View on GitHub →</a>

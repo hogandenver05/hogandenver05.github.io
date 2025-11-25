@@ -179,3 +179,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   window.addEventListener('scroll', handleScroll);
 })();
 
+// Hide project demo placeholders if images don't load
+(function() {
+  const demoImages = document.querySelectorAll('.project-demo-gif');
+  
+  demoImages.forEach(img => {
+    const demoContainer = img.closest('.project-demo');
+    if (!demoContainer) return;
+    
+    // Hide if image has no src or empty src
+    if (!img.src || img.src === window.location.href) {
+      demoContainer.style.display = 'none';
+      return;
+    }
+    
+    // Hide if image fails to load
+    img.addEventListener('error', () => {
+      demoContainer.style.display = 'none';
+    });
+    
+    // Also check if image loads successfully
+    if (img.complete && img.naturalHeight === 0) {
+      demoContainer.style.display = 'none';
+    }
+  });
+})();
