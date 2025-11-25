@@ -1,164 +1,53 @@
-# Denver Hogan - Portfolio Website
+<div align="center">
+   <pre style="color: #0066FF;">
+      __ __      ____         ___                      
+     / // /_    /  _/__ _    / _ \___ ___ _  _____ ____
+    / _  / /   _/ / /  ' \  / // / -_) _ \ |/ / -_) __/
+   /_//_/_/ ) /___//_/_/_/ /____/\__/_//_/___/\__/_/   
+          |/                                           
+   </pre>
+</div>
 
-A fresh, bold, and authentic portfolio website built with Hugo and deployed to GitHub Pages.
+## My Story
 
-## Overview
+I'm Denver Hogan, a software developer with a passion for building applications that make a difference. Currently, I'm working as a Software Developer Co-op at FOX Sports, where I'm enhancing products that serve over 10 million sports fans while learning the full lifecycle of software development.
 
-This portfolio showcases my projects, experience, and journey as a software developer. The site features a minimal but impactful design with dark mode support, mobile responsiveness, and optimized performance.
+My journey in software development started with a curiosity about how things work, from cars to relationships, and how software can solve real problems. This curiosity led me to pursue a B.S. in Applied Software Engineering with a minor in Information Security at Northern Kentucky University, where I've maintained a 3.7 GPA while balancing coursework, co-op experience, leadership roles, and life.
 
-**Live Site:** [hogandenver05.github.io](https://hogandenver05.github.io)
+## My Skills
 
-## Features
+**Languages:** Kotlin, Java, Python, JavaScript, HTML/CSS, XML, PHP, Swift, C, SQL, TypeScript
 
-- **Custom Hugo Theme** - Built from scratch with a focus on typography and visual clarity
-- **Dark Mode** - Toggle between light and dark themes with system preference detection
-- **Responsive Design** - Mobile-first approach that works beautifully on all devices
-- **Social Cards** - Open Graph and Twitter Card support for clean link previews
-- **Performance Optimized** - Fast loading times and SEO-friendly structure
-- **GitHub Pages Deployment** - Automated deployment via GitHub Actions
+**Core Concepts:** Agile/Scrum, Test-Driven Development, Design Patterns, Software Engineering Architecture, REST APIs, MVVM, OOP
 
-## Tech Stack
+**Tools & Technologies:** Android Studio, VSCode, Xcode, Git, Jira, Linux CLI, Node.js, Docker, MongoDB, Charles Proxy
 
-- **Hugo** - Static site generator
-- **HTML/CSS/JavaScript** - Custom theme implementation
-- **GitHub Actions** - CI/CD for automated deployment
+## My Philosophy
 
-## Local Development
+I believe in writing clean, maintainable code that stands the test of time. I'm drawn to modern software development principles such as Agile methodologies, test-driven development, and thoughtful architecture. But more than that, I believe in the power of collaboration, clear communication, and continuous learning.
 
-### Prerequisites
+Whether I'm building a full-stack web application or a mobile app, I focus on creating experiences that are both functional and meaningful. I'm not just building software, I'm solving problems, learning from mistakes, and contributing to products that people actually use.
 
-- [Hugo](https://gohugo.io/installation/) (extended version recommended)
-- Git
+## My Involvement
 
-### Setup
+Beyond code, I'm passionate about building community and developing leadership skills. These experiences have shaped how I approach collaboration, organization, and balancing multiple priorities.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/hogandenver05/hogandenver05.github.io.git
-   cd hogandenver05.github.io
-   ```
+#### **Sigma Phi Epsilon Fraternity** (September 2023 - Present)  
+I've taken on multiple leadership roles that have strengthened my ability to coordinate efforts and build meaningful connections:
 
-2. Start the development server:
-   ```bash
-   hugo server -D
-   ```
+- **Head of Recruitment** - Coordinating recruitment efforts and leveraging digital outreach strategies to attract prospective members
+- **Sound Body Chairman** - Organizing regular wellness programs that promote physical and mental health within our community
+- **IFC Standards Chairman** - Enforcing interfraternity conduct standards across campus, ensuring accountability and positive representation
 
-3. Open your browser to `http://localhost:1313`
+#### **Resident Assistant, University Housing** (August 2024 - August 2025)  
+Served as a Resident Assistant at Northern Kentucky University, where I:
 
-The site will automatically reload when you make changes to content or theme files.
+- Utilized digital tools to organize event data, manage documentation, and improve team communication
+- Planned and hosted 15+ educational and social programs with consistent attendance from 120+ students
+- Responded to safety incidents, ensuring timely communication and compliance with university protocols
+- Balanced crisis response and administrative duties while maintaining a full academic course load
 
-### Building for Production
-
-To build the site for production:
-
-```bash
-hugo --minify
-```
-
-The generated site will be in the `public/` directory.
-
-## Project Structure
-
-```
-.
-├── config.toml          # Hugo configuration
-├── content/             # Site content (Markdown files)
-│   ├── _index.md       # Home page
-│   ├── about.md        # About page
-│   ├── projects.md     # Projects page
-│   └── contact.md      # Contact page
-├── themes/
-│   └── portfolio-theme/  # Custom theme
-│       ├── layouts/     # HTML templates
-│       ├── static/      # CSS, JS, images
-│       └── archetypes/  # Content templates
-└── .github/
-    └── workflows/      # GitHub Actions
-```
-
-## Content Editing
-
-### Adding a New Page
-
-1. Create a new Markdown file in the `content/` directory:
-   ```bash
-   hugo new new-page.md
-   ```
-
-2. Edit the file with your content using Markdown syntax
-
-3. The page will be available at `/new-page/`
-
-### Editing Existing Pages
-
-Simply edit the Markdown files in the `content/` directory. The site will automatically update when you run `hugo server`.
-
-### Project Cards
-
-To add a new project to the Projects page, edit `content/projects.md` and add a new project card using the existing HTML structure.
-
-## Deployment
-
-### GitHub Pages (Automatic)
-
-The site is automatically deployed to GitHub Pages when you push to the `main` branch. The GitHub Actions workflow handles:
-
-1. Building the Hugo site
-2. Deploying to the `gh-pages` branch
-3. Making the site live at `hogandenver05.github.io`
-
-### Manual Deployment
-
-If you need to deploy manually:
-
-1. Build the site:
-   ```bash
-   hugo --minify
-   ```
-
-2. Push the `public/` directory to the `gh-pages` branch:
-   ```bash
-   cd public
-   git init
-   git add .
-   git commit -m "Deploy site"
-   git branch -M gh-pages
-   git remote add origin https://github.com/hogandenver05/hogandenver05.github.io.git
-   git push -u origin gh-pages
-   ```
-
-## Customization
-
-### Colors
-
-Edit the CSS variables in `themes/portfolio-theme/static/css/main.css`:
-
-```css
-:root {
-  --color-accent: #0066FF; /* Electric blue */
-  /* ... other colors */
-}
-```
-
-### Typography
-
-The site uses Inter font from Google Fonts. To change fonts, update the font imports in `themes/portfolio-theme/layouts/partials/head.html` and the CSS variables in `main.css`.
-
-### Navigation
-
-Edit the menu in `config.toml`:
-
-```toml
-[menu]
-  [[menu.main]]
-    identifier = 'home'
-    name = 'Home'
-    url = '/'
-```
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+These roles have taught me the importance of clear communication, strategic planning, and managing multiple priorities under pressure. Skills that directly translate to my work as a developer. Leading recruitment efforts has sharpened my ability to present ideas effectively, while organizing programs and responding to incidents has reinforced my commitment to thoughtful problem-solving and team well-being.
 
 ## Contact
 
