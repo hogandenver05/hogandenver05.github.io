@@ -121,7 +121,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         <span class="terminal-command">whoami</span>
       </div>
       <div class="terminal-line">
-        <span class="terminal-output">denver.hogan</span>
+        <span class="ascii-terminal-output">
+   —— ——      ————         ———                          
+  / // /_    /  _/__ _    / _ \\___ ___ _  _____ ____   <br>
+ / _  / /   _/ / /  ' \\  / // / -_) _ \\ |/ / -_) __/  <br>
+/_//_/_/ ) /___//_/_/_/ /____/\\__/_//_/___/\\__/_/     <br>
+       |/                                             
+        </span>
       </div>
       <div class="terminal-line">
         <span class="terminal-prompt">$</span>
@@ -148,5 +154,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     `;
     terminalBody.innerHTML = terminalContent;
   }
+})();
+
+// Navigation scroll effect (home page only)
+(function() {
+  // Only run on home page
+  if (!document.body.classList.contains('home')) return;
+  
+  const nav = document.querySelector('.nav');
+  if (!nav) return;
+  
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      nav.classList.add('nav-scrolled');
+    } else {
+      nav.classList.remove('nav-scrolled');
+    }
+  };
+  
+  // Check initial scroll position
+  handleScroll();
+  
+  // Listen for scroll events
+  window.addEventListener('scroll', handleScroll);
 })();
 
