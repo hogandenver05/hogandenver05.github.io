@@ -70,11 +70,20 @@
 (function() {
   const navToggle = document.getElementById('nav-toggle');
   const navMenu = document.getElementById('nav-menu');
+  const nav = document.querySelector('.nav');
   
   if (navToggle && navMenu) {
     navToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active');
       navToggle.classList.toggle('active');
+      // Add class to nav when menu is open (for home page background)
+      if (nav) {
+        if (navMenu.classList.contains('active')) {
+          nav.classList.add('nav-menu-open');
+        } else {
+          nav.classList.remove('nav-menu-open');
+        }
+      }
     });
     
     // Close menu when clicking on a link
@@ -83,6 +92,7 @@
       link.addEventListener('click', () => {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
+        if (nav) nav.classList.remove('nav-menu-open');
       });
     });
     
@@ -91,6 +101,7 @@
       if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
         navMenu.classList.remove('active');
         navToggle.classList.remove('active');
+        if (nav) nav.classList.remove('nav-menu-open');
       }
     });
   }
@@ -148,8 +159,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       </div>
       <div class="terminal-line">
         <span class="terminal-prompt">$</span>
-        <span class="terminal-command"></span>
-        <span class="terminal-cursor"></span>
+        <span class="terminal-command"><span class="terminal-cursor"></span></span>
       </div>
     `;
     terminalBody.innerHTML = terminalContent;
