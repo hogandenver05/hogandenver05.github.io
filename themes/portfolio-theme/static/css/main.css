@@ -730,7 +730,8 @@ a:hover {
 
 .project-links {
   display: flex;
-  gap: var(--spacing-sm);
+  flex-direction: column;
+  gap: var(--spacing-xs);
   margin-top: var(--spacing-sm);
 }
 
