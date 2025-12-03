@@ -155,7 +155,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         <span class="terminal-command">ls projects/</span>
       </div>
       <div class="terminal-line">
-        <span class="terminal-output">fox-sports-app/ park-pulse/ eato/ tetris-boom/</span>
+        <span class="terminal-output">fox-sports-app/ time-budget/ park-pulse/ eato/ tetris-boom/</span>
       </div>
       <div class="terminal-line">
         <span class="terminal-output">norse-interview/ sustainiac/ darcy-shack/</span>
