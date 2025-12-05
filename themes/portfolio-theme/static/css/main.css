@@ -72,6 +72,12 @@
 html {
   font-size: var(--font-size-base);
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+html, body {
+  height: 100%; /* Ensure full height */
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 body {
@@ -224,11 +230,12 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  min-height: calc(100vh - 80px);
+  height: 100vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: var(--spacing-lg) var(--container-padding) var(--spacing-2xl);
+  padding: var(--spacing-lg) var(--container-padding) var(--spacing-sm);
   text-align: center;
   position: relative;
   background-image: url('/images/hero-bg.jpg');
@@ -237,6 +244,7 @@ a:hover {
   background-repeat: no-repeat;
   margin-top: -80px;
   padding-top: calc(80px + var(--spacing-lg));
+  overflow: hidden;
 }
 
 .hero::before {
@@ -247,7 +255,7 @@ a:hover {
   right: 0;
   bottom: 0;
   background-color: var(--color-bg);
-  opacity: 0.85;
+  opacity: 0.7;
   z-index: 0;
 }
 
@@ -275,7 +283,7 @@ a:hover {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 
-    0 10px 30px rgba(0, 102, 255, 0.1),
+    0 0px 10px rgba(0, 102, 255, 0.1),
     0 0 0 1px rgba(0, 102, 255, 0.15),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 102, 255, 0.2);
@@ -283,7 +291,7 @@ a:hover {
 }
 
 .terminal-header {
-  background: linear-gradient(180deg, #e0e0e0 0%, #d0d0d0 100%);
+  background: linear-gradient(180deg, #f0f0f0 0%, #e0e0e0 100%);
   padding: var(--spacing-xs) var(--spacing-sm);
   display: flex;
   align-items: center;
@@ -363,14 +371,14 @@ a:hover {
 }
 
 .terminal-body {
-  min-height: 450px;
-  height: 450px;
+  height: 45em;
+  max-height: 45em;
   padding: var(--spacing-lg);
   font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
   font-size: 14px;
   line-height: 1.8;
   color: #0066cc;
-  background: #fafafa;
+  background: #fafafa; /* Light mode background */
   position: relative;
   overflow-y: auto;
   overflow-x: hidden;
@@ -382,21 +390,7 @@ a:hover {
   display: none; /* Chrome, Safari, Opera */
 }
 
-.terminal-body::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.05) 0%, transparent 50%);
-  pointer-events: none;
-}
-
 .terminal-line {
-  margin-bottom: var(--spacing-xs);
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
@@ -413,15 +407,48 @@ a:hover {
   align-items: center;
 }
 
+.terminal-input-line {
+  display: flex;
+  align-items: baseline;
+  bottom: 0;
+  background: #fafafa; /* Light mode background */
+  z-index: 10;
+  gap: var(--spacing-xs);
+}
+
+.terminal-command-input {
+  color: #00c669;
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 0 0 auto;
+  min-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  caret-color: transparent;
+}
+
+.terminal-command-input:focus {
+  outline: none;
+}
+
+.terminal-command-input:empty::before {
+  content: '\200b';
+}
+
+.terminal-command-input:focus + .terminal-cursor {
+  animation: blink 1s infinite;
+}
+
 .terminal-output {
-  color: rgba(0, 0, 0, 0.7);
-  margin-left: var(--spacing-md);
+  color: rgba(0, 0, 0, 0.7); /* Light mode: dark text */
   text-align: left;
 }
 
 .ascii-terminal-output {
-  margin-left: var(--spacing-md);
   line-height: 0.6;
+  margin: var(--spacing-sm) 0em var(--spacing-sm);
   white-space: pre;
   text-align: left;
   font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
@@ -434,11 +461,17 @@ a:hover {
 
 .terminal-cursor {
   display: inline-block;
-  width: 10px;
-  height: 20px;
+  align-self: center;
+  width: 0.6em;
+  height: 1.2em;
   background: #00c669;
   animation: blink 1s infinite;
-  vertical-align: middle;
+  margin-left: calc(-1 * var(--spacing-xs));
+}
+
+.terminal-cursor.typing {
+  animation: none;
+  opacity: 1;
 }
 
 @keyframes blink {
@@ -450,7 +483,7 @@ a:hover {
 .theme-dark .terminal-window {
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   box-shadow: 
-    0 10px 30px rgba(51, 153, 255, 0.2),
+    0 0px 10px rgba(51, 153, 255, 0.2),
     0 0 0 1px rgba(51, 153, 255, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(51, 153, 255, 0.25);
@@ -485,8 +518,12 @@ a:hover {
 }
 
 .theme-dark .terminal-body {
-  background: #0a0a0a;
+  background: #000000;
   color: #6366f1;
+}
+
+.theme-dark .terminal-input-line {
+  background: #000000;
 }
 
 .theme-dark .terminal-title {
@@ -497,8 +534,26 @@ a:hover {
   color: #00ff88;
 }
 
+.theme-dark .terminal-command-input {
+  color: #00ff88;
+}
+
 .theme-dark .terminal-output {
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Light mode terminal overrides */
+body:not(.theme-dark) .terminal-body {
+  background: #fafafa;
+  color: #0066cc;
+}
+
+body:not(.theme-dark) .terminal-input-line {
+  background: #fafafa;
+}
+
+body:not(.theme-dark) .terminal-output {
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .theme-dark .ascii-terminal-output {
@@ -606,7 +661,7 @@ a:hover {
 
 /* Page Layout */
 .main {
-  min-height: calc(100vh - 213px);
+  min-height: 100vh;
 }
 
 .page {
@@ -838,9 +893,9 @@ a:hover {
   color: var(--color-accent);
 }
 
-/* Remove footer margin on home page */
+/* Remove footer from home page */
 .home .footer {
-  margin-top: 0;
+  display: none;
 }
 
 /* Responsive Design */
@@ -896,8 +951,8 @@ a:hover {
   }
   
   .terminal-body {
-    min-height: 350px;
-    height: 350px;
+    height: 30em;
+    max-height: 30em;
     padding: var(--spacing-md);
     font-size: 12px;
   }
@@ -928,9 +983,10 @@ a:hover {
   }
   
   .terminal-body {
-    min-height: 300px;
-    height: 300px;
-    font-size: 8px;
+    height: 25em;
+    max-height: 25em;
+    font-size: 10px;
+    padding: var(--spacing-sm);
   }
 
   .terminal-cursor {
