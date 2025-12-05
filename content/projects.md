@@ -7,6 +7,26 @@ subtitle: "Building solutions, one project at a time"
 
 <div class="project-grid">
 
+  <div class="project-card project-card--professional">
+    <div class="project-demo">
+      <img src="/images/demos/fox-sports-demo.gif" alt="FOX Sports App Demo" class="project-demo-gif">
+    </div>
+    <h3>FOX Sports App</h3>
+    <div class="project-tags">
+      <span class="project-tag project-tag--professional">Professional Work</span>
+      <span class="project-tag">Kotlin</span>
+      <span class="project-tag">Android</span>
+      <span class="project-tag">MVVM</span>
+      <span class="project-tag">Compose</span>
+      <span class="project-tag">XML</span>
+    </div>
+    <p>A production mobile application serving millions of sports fans, built with modern Android architecture. I contributed as a Software Developer Co-op, working on features from planning to deployment.</p>
+    <p>During my co-op, I completed 10 tickets totaling 22 story points, contributing 1,458 lines of code while maintaining high code quality. I consistently delivered 2-3 tickets per sprint, achieving double the productivity of other co-ops. My contributions included writing comprehensive unit tests, fixing multiple long-running favorites issues, and enhancing UI elements across content modules. I demonstrated cross-platform communication skills by collaborating with different teams to resolve complex issues, and I actively participated in code reviews, sprint ceremonies, and architectural discussions. This experience strengthened my understanding of MVVM architecture, design patterns, and production-level debugging while working in a real engineering environment.</p>
+    <div class="project-links">
+      <a href="https://www.foxsports.com" target="_blank" rel="noopener">Visit FOX Sports →</a>
+    </div>
+  </div>
+
   <div class="project-card">
     <div class="project-demo">
       <img src="/images/demos/time-budget-demo.gif" alt="Time Budget Demo" class="project-demo-gif">
@@ -126,7 +146,6 @@ subtitle: "Building solutions, one project at a time"
     <p>An overhaul of the website <a href="https://www.sustainiac.com" target="_blank" rel="noopener">www.sustainiac.com</a> built as a team project for my first Web Development course.</p>
     <p>I teamed up with two peers to redesign an existing website from the ground up. We chose Sustainiac's website because it appeared outdated and illogically structured. We did our research and built a modern front-end site highlighting the company's purpose and displaying their products with improved navigation and user experience.</p>
     <div class="project-links">
-      <a href="https://www.sustainiac.com" target="_blank" rel="noopener">Visit Sustainiac →</a>
       <a href="https://github.com/hogandenver05/sustainiac_redesign" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
   </div>

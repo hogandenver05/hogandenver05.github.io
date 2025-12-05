@@ -737,6 +737,21 @@ a:hover {
   font-weight: 500;
 }
 
+.project-tag--professional {
+  box-shadow: 0 0 5px rgba(0, 102, 255, 0.6), 0 0 1px rgba(0, 102, 255, 0.4);
+  background-color: rgba(0, 102, 255, 0.1);
+  border: 1px solid rgba(0, 102, 255, 0.3);
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.theme-dark .project-tag--professional {
+  box-shadow: 0 0 5px rgba(51, 153, 255, 0.6), 0 0 1px rgba(51, 153, 255, 0.4);
+  background-color: rgba(51, 153, 255, 0.15);
+  border: 1px solid rgba(51, 153, 255, 0.4);
+  color: var(--color-text-muted);
+}
+
 .project-links {
   display: flex;
   flex-direction: column;
