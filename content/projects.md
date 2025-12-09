@@ -13,15 +13,18 @@ subtitle: "Building solutions, one project at a time"
     </div>
     <h3>FOX Sports App</h3>
     <div class="project-tags">
-      <span class="project-tag project-tag--professional">Professional Work</span>
+      <span class="project-tag project-tag--professional">Co-op</span>
+      <span class="project-tag">Agile</span>
+      <span class="project-tag">Unit Testing</span>
       <span class="project-tag">Kotlin</span>
-      <span class="project-tag">Android</span>
       <span class="project-tag">MVVM</span>
       <span class="project-tag">Compose</span>
       <span class="project-tag">XML</span>
+      <span class="project-tag">Android</span>
     </div>
-    <p>A production mobile application serving millions of sports fans, built with modern Android architecture. I contributed as a Software Developer Co-op, working on features from planning to deployment.</p>
-    <p>During my co-op, I completed 10 tickets totaling 22 story points, contributing 1,458 lines of code while maintaining high code quality. I consistently delivered 2-3 tickets per sprint, achieving double the productivity of other co-ops. My contributions included writing comprehensive unit tests, fixing multiple long-running favorites issues, and enhancing UI elements across content modules. I demonstrated cross-platform communication skills by collaborating with different teams to resolve complex issues, and I actively participated in code reviews, sprint ceremonies, and architectural discussions. This experience strengthened my understanding of MVVM architecture, design patterns, and production-level debugging while working in a real engineering environment.</p>
+    <p>During my software development co-op at FOX Sports, I delivered production features and improvements to the Android app, completing <b>13 tickets</b> worth <b>28 story points</b>. My work focused on refining UI behavior, improving personalization, and fixing issues that affected live sports, story pages, and video content.</p>
+    <p>I implemented updates such as centered event header displays, consistent rounded corners for all content modules, corrected favorite state handling, and prioritized stories from favorited authors. I also added direct sharing to Twitter and resolved several reliability issues including loading states, video playback, and headline configuration.</p>
+    <p>I contributed to broader engineering improvements by removing deprecated odds attribution code, verifying Deportes stream logic, writing new unit tests for the For You feed, and supporting a major refactor of the Top Headlines repository logic. These tasks strengthened my experience with Kotlin, MVVM, repository patterns, API integration, and unit testing while giving me hands-on experience working in a large production codebase.</p>
     <div class="project-links">
       <a href="https://www.foxsports.com" target="_blank" rel="noopener">Visit FOX Sports →</a>
     </div>
