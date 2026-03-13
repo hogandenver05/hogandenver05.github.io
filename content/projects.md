@@ -9,7 +9,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card project-card--professional">
     <div class="project-demo">
-      <img src="/images/demos/fox-sports-demo.gif" alt="FOX Sports App Demo" class="project-demo-gif">
+      <a href="https://www.youtube.com/watch?v=b5Lf4H-fhU8" target="_blank" rel="noopener">
+        <img src="/images/demos/fox-sports-demo.gif" alt="FOX Sports App Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>FOX Sports App</h3>
     <div class="project-tags">
@@ -22,9 +24,9 @@ subtitle: "Building solutions, one project at a time"
       <span class="project-tag">XML</span>
       <span class="project-tag">Android</span>
     </div>
-    <p>During my software development co-op at FOX Sports, I delivered production features and improvements to the Android app, completing <b>13 tickets</b> worth <b>28 story points</b>. My work focused on refining UI behavior, improving personalization, and fixing issues that affected live sports, story pages, and video content.</p>
-    <p>I implemented updates such as centered event header displays, consistent rounded corners for all content modules, corrected favorite state handling, and prioritized stories from favorited authors. I also added direct sharing to Twitter and resolved several reliability issues including loading states, video playback, and headline configuration.</p>
-    <p>I contributed to broader engineering improvements by removing deprecated odds attribution code, verifying Deportes stream logic, writing new unit tests for the For You feed, and supporting a major refactor of the Top Headlines repository logic. These tasks strengthened my experience with Kotlin, MVVM, repository patterns, API integration, and unit testing while giving me hands-on experience working in a large production codebase.</p>
+    <p>During my software development co-op at FOX Sports, I delivered production features and improvements to the <b>#1 Android sports app on Google Play</b>, completing <b>13 tickets</b> worth <b>28 story points</b>. My work focused on refining UI behavior, improving personalization, and fixing issues that affected live sports, story pages, and video content.</p>
+    <p>I implemented updates such as centered event header displays, consistent rounded corners for all content modules, corrected favorite state handling, and prioritized stories from favorited authors. I also added direct sharing to Twitter and resolved several reliability issues including loading states, video playback, and article headline configuration.</p>
+    <p>I contributed to broader engineering improvements by removing deprecated code, verifying stream logic, writing new unit tests, and refactoring repository logic. These tasks strengthened my experience with common software engineering tools while giving me hands-on experience working in a large production codebase.</p>
     <div class="project-links">
       <a href="https://www.foxsports.com" target="_blank" rel="noopener">Visit FOX Sports →</a>
     </div>
@@ -32,7 +34,33 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/time-budget-demo.gif" alt="Time Budget Demo" class="project-demo-gif">
+      <a href="/images/demos/gitart-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/gitart-demo.gif" alt="Gitart Demo" class="project-demo-gif">
+      </a>
+    </div>
+    <h3>Gitart</h3>
+    <div class="project-tags">
+      <span class="project-tag">Go</span>
+      <span class="project-tag">Debian Packaging</span>
+      <span class="project-tag">CLI Tool</span>
+      <span class="project-tag">Git Automation</span>
+      <span class="project-tag">Open Source</span>
+      <span class="project-tag">Git</span>
+    </div>
+    <p>A command line tool that generates custom artwork on your GitHub contribution graph. Users provide a message and the tool converts it into a series of commits so the design appears directly on their profile.</p>
+    <p>I built a Go-based CLI that renders text using a compact 3×5 pixel font where each pixel represents a day on the contribution graph. The tool generates commits inside a dedicated nested repository and optionally pushes them to GitHub, allowing users to create visible designs or messages across their contribution history.</p>
+    <p>I also learned how to package and distribute software for Linux by creating a Debian <code>.deb</code> package and publishing releases through GitHub. This project strengthened my experience with Go, CLI design, Git automation, and Linux packaging workflows.</p>
+    <div class="project-links">
+      <a href="https://github.com/hogandenver05/gitart/releases" target="_blank" rel="noopener">Download it Now →</a>
+      <a href="https://github.com/hogandenver05/gitart" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <div class="project-demo">
+      <a href="/images/demos/time-budget-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/time-budget-demo.gif" alt="Time Budget Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Time Budget</h3>
     <div class="project-tags">
@@ -52,7 +80,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/park-pulse-demo.gif" alt="Park Pulse Demo" class="project-demo-gif">
+      <a href="/images/demos/park-pulse-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/park-pulse-demo.gif" alt="Park Pulse Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Park Pulse</h3>
     <div class="project-tags">
@@ -74,7 +104,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/tetris-boom-demo.gif" alt="Tetris BOOM! Demo" class="project-demo-gif">
+      <a href="/images/demos/tetris-boom-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/tetris-boom-demo.gif" alt="Tetris BOOM! Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Tetris BOOM!</h3>
     <div class="project-tags">
@@ -95,7 +127,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/eato-demo.gif" alt="Eato Meal Tracker Demo" class="project-demo-gif">
+      <a href="/images/demos/eato-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/eato-demo.gif" alt="Eato Meal Tracker Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Eato Meal Tracker</h3>
     <div class="project-tags">
@@ -116,7 +150,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/norse-interview-demo.gif" alt="Norse Interview Demo" class="project-demo-gif">
+      <a href="/images/demos/norse-interview-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/norse-interview-demo.gif" alt="Norse Interview Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Norse Interview</h3>
     <div class="project-tags">
@@ -136,7 +172,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/sustainiac-demo.gif" alt="Sustainiac Redesign Demo" class="project-demo-gif">
+      <a href="/images/demos/sustainiac-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/sustainiac-demo.gif" alt="Sustainiac Redesign Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Sustainiac Redesign</h3>
     <div class="project-tags">
@@ -155,7 +193,9 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card">
     <div class="project-demo">
-      <img src="/images/demos/darcy-shack-demo.gif" alt="Darcy Shack Demo" class="project-demo-gif">
+      <a href="/images/demos/darcy-shack-demo.gif" target="_blank" rel="noopener">
+        <img src="/images/demos/darcy-shack-demo.gif" alt="Darcy Shack Demo" class="project-demo-gif">
+      </a>
     </div>
     <h3>Darcy Shack</h3>
     <div class="project-tags">
