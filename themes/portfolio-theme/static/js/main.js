@@ -3,13 +3,13 @@
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
   
-  // Check for saved theme preference or default to system preference
+  // Check for saved theme preference or default to dark mode
   const getThemePreference = () => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       return savedTheme;
     }
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    return 'dark';
   };
   
   // Apply theme
