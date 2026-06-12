@@ -11,16 +11,16 @@ subtitle: "Building solutions, one project at a time"
     <div class="project-demo">
       <img src="/images/demos/fischer-homes-demo.gif" alt="Fischer Homes Software Engineering Experience" class="project-demo-gif">
     </div>
-    <h3>Fischer Homes Internal Software Systems</h3>
+    <h3>Fischer Homes</h3>
     <div class="project-tags">
-      <span class="project-tag project-tag--professional">Internship</span>
-      <span class="project-tag">Agile</span>
-      <span class="project-tag">Scrum</span>
-      <span class="project-tag">Git</span>
-      <span class="project-tag">Unit Testing</span>
-      <span class="project-tag">Code Reviews</span>
+      <span class="project-tag project-tag--professional">Co-op</span>
       <span class="project-tag">Full-Stack</span>
-      <span class="project-tag">Enterprise Software</span>
+      <span class="project-tag">Agile</span>
+      <span class="project-tag">Atlassian</span>
+      <span class="project-tag">Node.js</span>
+      <span class="project-tag">React</span>
+      <span class="project-tag">Unit Testing</span>
+      <span class="project-tag">ERP</span>
     </div>
       <p>As a Software Engineer at Fischer Homes, I contribute to the development and maintenance of internal business applications that support teams across the organization. In my first month, I completed <b>10 development tickets worth 16 story points</b>, quickly becoming productive within a large enterprise environment and delivering solutions across multiple projects.</p>
       <p>I work throughout the full stack using <b>React and Node.js</b>, implementing features, resolving defects, and improving application workflows across <b>more than five enterprise applications</b>. My responsibilities include collaborating with stakeholders, participating in Agile ceremonies, writing maintainable code, conducting testing, and contributing to code reviews to ensure high-quality software delivery.</p>
