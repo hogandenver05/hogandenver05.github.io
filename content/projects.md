@@ -9,6 +9,29 @@ subtitle: "Building solutions, one project at a time"
 
   <div class="project-card project-card--professional">
     <div class="project-demo">
+      <img src="/images/demos/fischer-homes-demo.gif" alt="Fischer Homes Software Engineering Experience" class="project-demo-gif">
+    </div>
+    <h3>Fischer Homes Internal Software Systems</h3>
+    <div class="project-tags">
+      <span class="project-tag project-tag--professional">Internship</span>
+      <span class="project-tag">Agile</span>
+      <span class="project-tag">Scrum</span>
+      <span class="project-tag">Git</span>
+      <span class="project-tag">Unit Testing</span>
+      <span class="project-tag">Code Reviews</span>
+      <span class="project-tag">Full-Stack</span>
+      <span class="project-tag">Enterprise Software</span>
+    </div>
+    <p>As a Software Engineer at Fischer Homes, I contributed to the development and maintenance of internal business applications used across multiple departments. Working within an Agile development environment, I collaborated with developers, product owners, and business stakeholders to deliver software solutions that supported operational efficiency and business objectives.</p>
+    <p>I participated throughout the software development lifecycle, including designing, implementing, testing, and maintaining application features. My responsibilities included writing clean, maintainable code, developing unit tests, addressing application defects, supporting help desk requests, and participating in code reviews to improve software quality and reliability.</p>
+    <p>I also gained experience working with build and release processes, prioritizing development tasks, evaluating new technologies, and contributing to long-term application improvements. This role strengthened my ability to solve complex technical problems, communicate effectively across teams, and deliver scalable solutions in a professional enterprise environment.</p>
+    <div class="project-links">
+      <a href="https://www.fischerhomes.com" target="_blank" rel="noopener">Visit Fischer Homes →</a>
+    </div>
+  </div>
+  
+  <div class="project-card project-card--professional">
+    <div class="project-demo">
       <a href="https://www.youtube.com/watch?v=b5Lf4H-fhU8" target="_blank" rel="noopener">
         <img src="/images/demos/fox-sports-demo.gif" alt="FOX Sports App Demo" class="project-demo-gif">
       </a>
